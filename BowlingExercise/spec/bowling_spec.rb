@@ -101,6 +101,17 @@ describe Bowling do
         expect(result).to eq(57)
     end
 
+    it "adds four frames strike-spare-number-miss" do
+        # Arrange
+        # bowling = described_class.new
+
+        # Act
+        result = bowling.get_total_score("X 5/ 45 9-")      
+
+        # Assert
+        expect(result).to eq(52)
+    end
+
     
 end 
 
